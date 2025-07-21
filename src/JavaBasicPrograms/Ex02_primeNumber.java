@@ -11,11 +11,13 @@ public class Ex02_primeNumber {
 		 * For example, 2, 3, 5, 7, 11, 13, 17... are the prime numbers.
 		 */
 
-		isPrime(6);
+		isPrime(1);
 	}
 
 	private static void isPrime(int num) {
 		int flag = -1;
+		if(num>1) {
+		
 		for (int i = 2; i <= num / 2; i++) {
 			if (num % i == 0) {
 				System.out.println(num + " is not Prime Number");
@@ -26,5 +28,8 @@ public class Ex02_primeNumber {
 
 		if (flag == -1)
 			System.out.println(num + " is Prime Number");
+	}
+	else
+		System.out.println("Enter Valid Number");
 	}
 }
