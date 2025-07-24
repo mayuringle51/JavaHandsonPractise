@@ -1,5 +1,7 @@
 package javaTpointTech;
 
+import java.util.Arrays;
+
 public class JavaArrayPrograms {
 
 	public static void main(String[] args) {
@@ -13,13 +15,69 @@ public class JavaArrayPrograms {
 		// copyArrayAtoB(a, b);
 		// FrequencyOfEachElement(arr);
 		// LeftRotate(a,3);//(array, times)
-		findDuplicate(array);
+		// findDuplicate(array);
+		// reverseArray(a);
+		// printEvenArray(a);
+		// printOddNumber(a);
+		// printLargest(arr);
+		//printSmallest(arr);
+		countArray(arr);
+
+	}
+
+	private static void countArray(int[] arr) {
+		int count=0;
+		for(int i)
+	}
+
+	private static void printSmallest(int[] arr) {
+		int min = arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] < min)
+				min = arr[i];
+
+		}
+		System.out.println("min value is " + min);
+
+	}
+
+	private static void printLargest(int[] arr) {
+		int max = arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > max)
+				max = arr[i];
+
+		}
+		System.out.println("Max value is " + max);
+
+	}
+
+	private static void printOddNumber(int[] a) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 != 0)
+				System.out.print(a[i] + " ");
+		}
+	}
+
+	private static void printEvenArray(int[] a) {
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % 2 == 0)
+				System.out.print(a[i] + " ");
+		}
+	}
+
+	private static void reverseArray(int[] a) {
+
+		for (int i = a.length - 1; i >= 0; i--) {
+			System.out.print(" " + a[i]);
+
+		}
 
 	}
 
 	private static void findDuplicate(int[] array) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	private static void LeftRotate(int[] a, int n) {
